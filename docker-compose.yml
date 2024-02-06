@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  logistics-service:
+    build: ./logistics-service
+    ports:
+      - "3001:3001"
+
+  crm-service:
+    build: ./crm-service
+    ports:
+      - "3002:3002"
+
+  erp-service:
+    build: ./erp-service
+    ports:
+      - "3003:3003"
